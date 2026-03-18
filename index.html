@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Scheme Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Color Schemer</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav>
-            <h2>Color Scheme Generator</h2>
-        </nav>
+        <h2>Color Schemer</h2>
+        <p id="theme-toggle">
+            🌒☀️
+        </p>
+
     </header>
     <main>
         <div class="container">
@@ -25,7 +35,7 @@
                         <option value="Monochrome">Monochrome 5</option>
                         <option value="Monochrome">Monochrome 6</option>
                     </select>
-                    <button type="submit">Get color scheme</button>
+                    <button type="submit" id="get-color-btn">Get color scheme</button>
                 </form>
                 <div id="color-scheme">
                     <div id="color-display">
