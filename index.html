@@ -22,44 +22,24 @@
 
     </header>
     <main>
-        <div class="container">
-            <div id="main-div">
-                <form action="" id="user-form">
-                    <input type="color">
-                    <select name="mode" id="dropdown">
-                        <option value="Monochrome">Monochrome</option>
-                        <option value="Monochrome">Monochrome 1</option>
-                        <option value="Monochrome">Monochrome 2</option>
-                        <option value="Monochrome">Monochrome 3</option>
-                        <option value="Monochrome">Monochrome 4</option>
-                        <option value="Monochrome">Monochrome 5</option>
-                        <option value="Monochrome">Monochrome 6</option>
+        <div id="main-div">
+            <form action="" id="user-form">
+                <input type="color" id="color-input">
+                <div id="dropdown">
+                    <select name="mode" id="mode-input">
+                        <option value="monochrome" selected>Monochrome</option>
+                        <option value="monochrome-dark">Monochrome Light</option>
+                        <option value="monochrome-light">Monochrome Dark</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
                     </select>
-                    <button type="submit" id="get-color-btn">Get color scheme</button>
-                </form>
-                <div id="color-scheme">
-                    <div id="color-display">
-                        <div class="color"></div>
-                        <div class="color-code"></div>
-                    </div>
-                    <div id="color-display">
-                        <div class="color"></div>
-                        <div class="color-code"></div>
-                    </div>
-                    <div id="color-display">
-                        <div class="color"></div>
-                        <div class="color-code"></div>
-                    </div>
-                    <div id="color-display">
-                        <div class="color"></div>
-                        <div class="color-code"></div>
-                    </div>
-                    <div id="color-display">
-                        <div class="color"></div>
-                        <div class="color-code"></div>
-                    </div>
                 </div>
-            </div>
+                <button type="submit" id="get-color-btn">Get color scheme</button>
+            </form>
+            <div id="color-scheme"></div>
         </div>
     </main>
     <footer>Copyright © 2026</footer>
